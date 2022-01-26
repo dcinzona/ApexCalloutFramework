@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timeout_Validation</fullName>
+    <active>true</active>
+    <description>Timeout value should be greater than or equal to 1 and less than or equal to 120.</description>
+    <errorConditionFormula>(Timeout__c &lt; 1) || (Timeout__c &gt; 120)</errorConditionFormula>
+    <errorDisplayField>Timeout__c</errorDisplayField>
+    <errorMessage>Timeout value should be greater than or equal to 1 and less than or equal to 120.</errorMessage>
+</ValidationRule>
